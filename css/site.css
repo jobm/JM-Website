@@ -15,15 +15,15 @@ body{
   margin: 0;
   padding: 0;
 }
-@media(min-width:100%) {
+@media(min-width:768px) {
     .navbar {
         padding: 25px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
-        background-color: transparent;
-        background: transparent;
-        border-color: transparent;
+        background-color: black;
+        background: black;
+        border-color: black;
 
     }
 
@@ -60,4 +60,22 @@ body{
 
 .navbar .navbar-nav li a:focus {
     outline: 0;
+}
+
+/*banner text section*/
+.banner-text{
+  position: relative;
+  text-align: center;
+  top:80%;
+  color:#fff;
+}
+.banner-text h2{
+  font-size: 64px;
+  color:#fff;
+}
+.banner-text h3{
+  font-size: 52px;
+  color:#fff;
+  text-decoration: underline;
+  text-decoration-style: solid;
 }
