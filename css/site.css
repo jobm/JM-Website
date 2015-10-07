@@ -2,6 +2,9 @@ body{
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
 }
 .banner{
   z-index: -100;
@@ -18,7 +21,7 @@ body{
   -ms-filter: brightness(70%);
 
   width: 100%;
-  height: 700px;
+  height: 600px;
   color:#fff;
   margin: 0;
   padding: 0;
@@ -72,25 +75,28 @@ body{
 }
 
 /*banner text section*/
-.banner-text{
+#banner-text{
   z-index: 100;
   position: absolute;
   text-align: center;
-  top:50%;
-  left:7%;
-  color:#fff;
+  top:30%;
+  left:30%;
+  right: 15%;
+  bottom: 30%;
+  background-color:transparent;
 }
 
-.banner-text h2{
-  font-size: 64px;
-  color:#fff;
-  z-index: 1;
-
-}
-.banner-text h3{
-  font-size: 52px;
+#banner-text p{
+  font-size: 42px;
   color:#fff;
   text-decoration: underline;
   text-decoration-style: solid;
   z-index: 100;
+}
+
+.social-media{
+  text-align: center;
+  background-color: #212121;
+  color: #fff;
+  font-size: 62px;
 }
