@@ -1,23 +1,15 @@
 var app = angular.module("myapp",['ui.bootstrap']);
-app.sevice('modalService',function($modal){
-            var modalDefaults = {
-            backdrop: true,
-            keyboard: true,
-            modalFade: true,
-            templateUrl: '/partials/modal.html'
-          };
 
-            var modalOptions = {
-            closeButtonText: 'Close',
-            actionButtonText: 'OK',
-            headerText: 'Proceed?',
-            bodyText: 'Perform this action?'
-        };
+app.controller("appController",function($scope,$modal){
 
-        this.showModal = function (customModalDefaults, customModalOptions) {
-            if (!customModalDefaults) customModalDefaults = {};
-            customModalDefaults.backdrop = 'static';
-            return this.show(customModalDefaults, customModalOptions);
-        };
+  $scope.open = function() {
+    $modal.open({
+      animation: $scope.animationsEnabled,
+      templateUrl: 'partials/modal.html',
+      controller: 'appController',
+      size: size,
+    });
+
+  }
 
 });
